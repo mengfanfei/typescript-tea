@@ -24,7 +24,7 @@ interface TodoInputProps {
   onChange?: (value: TodoValue) => void
 }
 
-const TodoInput = ({value = {}, onChange}: TodoInputProps) => {
+function TodoInput({value = {}, onChange}: TodoInputProps) {
   const [content, setContent] = useState('')
   const [user, setUser] = useState(UserId.tuture)
   const [date, setDate] = useState('')

@@ -48,11 +48,11 @@ function App() {
     <div className="App" ref={ref}>
       <div className="container header">
         <img src={logo} alt=""/>
-        <Title level={3}>图雀社区：汇聚精彩的免费实战教程</Title>
+        <Title level={3}>TypeScript：React与Antd实现待办事项</Title>
       </div>
       <div className="container">
         <Form onFinish={onFinish}>
-          <Form.Item name="todo">
+          <Form.Item name="todo" rules={[{ required: true, message: '请输入内容' }]}>
             <TodoInput />
           </Form.Item>
           <Form.Item>
