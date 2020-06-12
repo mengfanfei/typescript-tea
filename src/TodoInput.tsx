@@ -35,7 +35,7 @@ const TodoInput = ({value = {}, onChange}: TodoInputProps) => {
     }
   }
 
-  const onContentChange = (e: any) => {
+  const onContentChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (!("content" in value)) {
       setContent(e.target.value)
     }
